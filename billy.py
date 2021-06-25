@@ -43,3 +43,4 @@ async def image(ctx):
 	await ctx.send(file=discord.File(random.choice(image)))
 
 token = os.environ.get('BOT_TOKEN')
+bot.run(token)
