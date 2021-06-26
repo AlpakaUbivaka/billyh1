@@ -25,20 +25,24 @@ async def sueta(ctx): #вывод фразочек по команде
 
 @bot.command()
 async def fuck_you(ctx):
-	await ctx.send('Oh, fuck you, leather man!')
+	embed = discord.Embed(
+		title='Oh, fuck you, leather man!',
+		url='https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+	)
+	await ctx.send(embed=embed)
 
 
 @bot.command()
 async def secret(ctx):
 	embed = discord.Embed(
 		title="Великий секрет гачимучи",
-		url='https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+		url='https://youtu.be/17jixTfd81Y',
 	)
 	await ctx.send(embed=embed)
 
 
 @bot.command(pass_context = True)
-async def image(ctx):
+async def meme(ctx):
 	image = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
 	await ctx.send(file=discord.File(random.choice(image)))
 
