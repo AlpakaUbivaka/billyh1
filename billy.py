@@ -27,7 +27,7 @@ async def sueta(ctx): #вывод фразочек по команде
 async def fuck_you(ctx):
 	embed = discord.Embed(
 		title='Oh, fuck you, leather man!',
-		url='https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+		url='https://youtu.be/17jixTfd81Y',
 	)
 	await ctx.send(embed=embed)
 
@@ -36,7 +36,7 @@ async def fuck_you(ctx):
 async def secret(ctx):
 	embed = discord.Embed(
 		title="Великий секрет гачимучи",
-		url='https://youtu.be/17jixTfd81Y',
+		url='https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 	)
 	await ctx.send(embed=embed)
 
