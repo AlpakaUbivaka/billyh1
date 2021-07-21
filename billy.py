@@ -6,11 +6,17 @@ from discord import utils
 import asyncio
 import random
 import os
+from dotenv import load_dotenv
 
 client = discord.Client()
 
 bot = commands.Bot(command_prefix = '>')
 
+load_dotenv()
+
+@client.event
+async def on_ready():
+    print(f'{client.user.name} has connected to САМЫЙ МУЖЫЦКИЙ СЕРВЕР СЕЯ РУСИ!')
 
 @bot.event 
 async def on_member_join(ctx, member):
@@ -46,5 +52,6 @@ async def meme(ctx):
 	image = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
 	await ctx.send(file=discord.File(random.choice(image)))
 
+token = os.getenv('BOT_TOKEN')
 token = os.environ.get('BOT_TOKEN')
 bot.run(token)
