@@ -27,7 +27,10 @@ async def on_member_join(ctx, member):
 async def sueta(ctx): #вывод фразочек по команде
 	jiza = ['Суета...', 'fuck youuuu', 'Я покажу тебе, кто босс этой качалки!', 'Как глубоко ты готов зайти?', 'Сначала я порву свою майку, а потом твоё очко, как видишь, майка уже порвана.', 'ты ошибся дверью, дружочек-пирожочек.']
 	await ctx.send(random.choice(jiza))
-
+	
+@bot.command()
+asynk def trista(ctx):
+	await ctx.send('отсоси у тракториста')
 
 @bot.command()
 async def fuck_you(ctx):
